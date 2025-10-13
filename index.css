@@ -714,20 +714,8 @@ input[type="submit"]:hover {
   background: #fff;
 }
 
-.tooltip-icon-en::after {
-  content: "This rating is an official recommendation indicator comprehensively determined by our platform based on the member’s service quality, communication, track record, and customer feedback. It is not based solely on user reviews and is provided for reference purposes only; it does not guarantee any results.";
-}
-
 .tooltip-icon-ja::after {
   content: "この評価は、メンバーの対応品質、コミュニケーション、実績、および顧客からのフィードバックをもとに、本メンバーは当プラットフォームが総合的に判断した公式の推奨指標です。ユーザー評価のみに基づくものではなく、参考情報として提供されており、成果を保証するものではありません。";
-}
-
-.tooltip-icon-ko::after {
-  content: "이 평가는 멤버의 대응 품질, 커뮤니케이션, 실적 및 고객 피드백을 바탕으로 당 플랫폼이 종합적으로 판단한 공식 추천 지표입니다. 사용자 평가에만 근거한 것이 아니며 참고용으로 제공되며, 결과를 보장하지 않습니다.";
-}
-
-.tooltip-icon-zh-tw::after {
-  content: "此評價為本平台根據成員的服務品質、溝通能力、實績及客戶回饋綜合判斷後的官方推薦指標。非僅依用戶評價而定，僅供參考，並不保證成果。";
 }
 
 .tooltip-icon::after {
@@ -848,20 +836,8 @@ input[type="submit"]:hover {
   gap: 4px;
 }
 
-.tooltip-certified-en::after {
-  content: "This member has passed the review and interview conducted by our platform’s expert team, so please feel confident to make a reservation.";
-}
-
 .tooltip-certified-ja::after {
   content: "本メンバーは当プラットフォームの専門チームによる審査および面談を通過しておりますので、安心してご予約ください。";
-}
-
-.tooltip-certified-ko::after {
-  content: "본 멤버는 당 플랫폼 전문 팀의 심사 및 면접을 통과하였으니 안심하고 예약해 주세요.";
-}
-
-.tooltip-certified-zh-tw::after {
-  content: "本成員已通過本平台專業團隊的審查與面談，請放心預約服務。";
 }
 
 .tooltip-certified::after {
