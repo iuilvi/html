@@ -311,7 +311,7 @@ transform: rotate(360deg);
   }
 }
 
-.guide-card {
+.member-card {
   position: relative;
   overflow: hidden;
   background: #fff0f6aa;
@@ -325,13 +325,13 @@ transform: rotate(360deg);
   border: 1px solid #ffaefb;
 }
 
-.guide-card:hover {
+.member-card:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 20px rgba(255, 51, 245, 0.7);
   border: 1px solid #ff69f5;
 }
 
-.guide-rating {
+.member-rating {
   height: 22px;
   background-color: #dd33ff;
   color: #fff;
@@ -343,17 +343,17 @@ transform: rotate(360deg);
   align-items: center;
 }
 
-.guide-rating.level-high {
+.member-rating.level-high {
   height: 22px;
   background-color: #dd33ff;
 }
 
-.guide-rating.level-priority {
+.member-rating.level-priority {
   height: 22px;
   background-color: #dd33ff;
 }
 
-.guide-avatar-wrapper {
+.member-avatar-wrapper {
   position: relative;
   width: 145px;
   height: 145px;
@@ -362,7 +362,7 @@ transform: rotate(360deg);
   border: 1px solid #fd69ff;
 }
 
-.guide-avatar-wrapper::after {
+.member-avatar-wrapper::after {
   content: '▶';
   position: absolute;
   top: 50%;
@@ -384,15 +384,15 @@ transform: rotate(360deg);
   z-index: 2;
 }
 
-.guide-avatar-wrapper:hover::after {
+.member-avatar-wrapper:hover::after {
   opacity: 1;
 }
 
-.guide-avatar-wrapper:hover .play-icon {
+.member-avatar-wrapper:hover .play-icon {
   opacity: 1;
 }
 
-.guide-avatar {
+.member-avatar {
   position: relative;
   width: 145px;
   height: 145px;
@@ -403,8 +403,21 @@ transform: rotate(360deg);
   z-index: 1;
 }
 
-.guide-avatar-wrapper img:hover {
+.member-avatar-wrapper img:hover {
   filter: brightness(1.05);
+}
+
+.member-avatar-small {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 2px;
+  left: 2px;
+  margin: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  z-index: 1;
 }
 
 .with-award::before {
@@ -423,7 +436,7 @@ transform: rotate(360deg);
   pointer-events: none;
 }
 
-.guide-avatar-wrapper.with-award {
+.member-avatar-wrapper.with-award {
   overflow: visible;
 }
 
@@ -483,8 +496,12 @@ input[type="submit"]:hover {
   pointer-events: none;
 }
 
-.guide-content {
+.booking-content {
   padding-top: 1rem;
+}
+
+.price-content {
+  padding-top: 0rem;
 }
 
 .package-name {
@@ -500,21 +517,21 @@ input[type="submit"]:hover {
   height: 0;
 }
 
-.guide-name {
+.member-name {
   font-weight: bold;
   font-size: 10pt;
   color: #dd33ff;
   margin-bottom: 8px;
 }
 
-.guide-price {
+.member-price {
   font-size: 0.9rem;
   color: #dd33ff;
   position: relative;
   padding-bottom: 2px;
 }
 
-.guide-languages {
+.member-area {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -523,7 +540,7 @@ input[type="submit"]:hover {
   margin-bottom: 10px;
 }
 
-.guide-note {
+.booking-note {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -535,7 +552,7 @@ input[type="submit"]:hover {
   margin-bottom: 8px;
 }
 
-.guide-avatar-online::before {
+.member-avatar-online::before {
   content: "";
   position: absolute;
   bottom: 5px;
@@ -549,7 +566,7 @@ input[type="submit"]:hover {
   box-shadow: 0 0 4px #dd33ff99;
 }
 
-.guide-avatar-away::before {
+.member-avatar-away::before {
   content: "";
   position: absolute;
   bottom: 5px;
