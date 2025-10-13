@@ -258,7 +258,12 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ---------------- Lightbox gallery ---------------- */
-  const galleryImages = Array.from(document.querySelectorAll('.image-grid img'));
+  const galleryImages = [
+  ...Array.from(document.querySelectorAll('.image-grid img, .sub-grid img'))
+];
+  const videoImg = new Image();
+  videoImg.src = '1.jpg';
+  galleryImages.unshift(videoImg);
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const lightboxClose = document.getElementById('lightbox-close');
@@ -272,7 +277,10 @@ document.addEventListener('DOMContentLoaded', () => {
   };
   const showPrev = () => showImage((currentIndex - 1 + galleryImages.length) % galleryImages.length);
   const showNext = () => showImage((currentIndex + 1) % galleryImages.length);
-  galleryImages.forEach((img, index) => img.addEventListener('click', () => showImage(index)));
+  galleryImages.forEach((img, index) => {
+  if (index === 0) return;
+  img.addEventListener('click', () => showImage(index));
+  });
   lightboxClose?.addEventListener('click', () => lightbox.classList.add('hidden'));
   prevBtn?.addEventListener('click', showPrev);
   nextBtn?.addEventListener('click', showNext);
